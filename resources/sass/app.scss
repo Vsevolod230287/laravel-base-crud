@@ -6,10 +6,38 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    .home{
-      width: 100%;
-      padding-bottom: 50px;
-      font-size: 40px;
+
+    form {
+        color: white;
+
+        input {
+          color: white;
+            background-color: black;
+        }
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        input[type="submit"] {
+          color: white;
+            margin: 15px 0;
+            width: 100%;
+            padding: 10px 0;
+        }
+    }
+
+    .home {
+        text-align: center;
+        width: 50%;
+        padding-bottom: 50px;
+        font-size: 40px;
+    }
+
+    .create {
+        text-align: center;
+        width: 50%;
+        padding-bottom: 50px;
+        font-size: 40px;
     }
 
     .content {

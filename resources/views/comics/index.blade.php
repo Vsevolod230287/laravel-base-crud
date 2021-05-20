@@ -3,6 +3,7 @@
 @section('main')
 <main>
   <a class="home" href="{{route('home')}}">Home</a>
+  <a class="create" href="{{route('comics.create')}}">Crea Comic</a>
     @foreach ($comics as $comic)
     <a href="{{ route('comics.show', ['comic' => $comic->id] ) }}">
         <div class="card">
