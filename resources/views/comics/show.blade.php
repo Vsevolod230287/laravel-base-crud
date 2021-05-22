@@ -5,7 +5,7 @@
 <main>
 
     <div class="detail">
-      <a href="{{route('comics.index')}}">All comics</a>
+        <a href="{{route('comics.index')}}">All comics</a>
         <div class="img">
             <h2>{{$comic->title}}</h2>
             <img src="{{$comic->thumb}}" alt="">
@@ -19,7 +19,11 @@
 
 
     </div>
-
+    <form class="" action="{{route('comics.destroy', ['comic'=>$comic])}}" method="post">
+        @csrf
+        @method('DELETE')
+        <input type="submit" name="" value="ELIMINA">
+    </form>
 
 </main>
 

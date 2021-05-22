@@ -22,51 +22,41 @@ class ComicController extends Controller
 
     public function store(Request $request)
     {
-        dd($request);
+        $data = $request->all();
+        $comic_obj = new Comic();
+        $comic_obj->fill($data);
+        $comic_obj->save();
+
+        $comic = Comic::orderBy('id', 'desc')->first();
+
+        return redirect()->route('comics.show', $comic);
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Comic  $comic
-     * @return \Illuminate\Http\Response
-     */
+
     public function show(Comic $comic)
     {
         return view('comics.show', compact('comic'));
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Comic  $comic
-     * @return \Illuminate\Http\Response
-     */
+
     public function edit(Comic $comic)
     {
-        //
+        return view('comics.edit', compact('comic'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Comic  $comic
-     * @return \Illuminate\Http\Response
-     */
+
     public function update(Request $request, Comic $comic)
     {
-        //
+        $data = $request->all();
+        $comic->update($data);
+
+        return redirect()->route('comics.show', compact('comic'));
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Comic  $comic
-     * @return \Illuminate\Http\Response
-     */
+
     public function destroy(Comic $comic)
     {
-        //
+        $comic->delete();
+        return redirect()->route('comics.index');
     }
 }
