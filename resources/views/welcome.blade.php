@@ -1,17 +1,13 @@
 @extends('layouts.app')
 
+
 @section('main')
-<main>
 
-    <div class="content">
-        <div class="title">
-          Best Comics
-        </div>
+<div id="welcome">
 
-        <div class="links">
-            <a href="{{route('comics.index')}}">All Comics</a>
-        </div>
+    <div>
+        <span class="title">  Best Comics  </span>
+        <a  href="{{route('comics.index')}}">All Comics</a>
     </div>
-</main>
 
-@endsection
+    @endsection

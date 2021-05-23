@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('main')
-<main>
+<div id="edit">
     <form class="" action="{{route('comics.update', ['comic'=>$comic->id])}}" method="post">
       @csrf
       @method('PUT')
@@ -21,7 +21,6 @@
         <input type="submit" name="" value="ELIMINA">
     </form>
 
-</main>
-
+</div>
 
 @endsection

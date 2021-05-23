@@ -1,0 +1,134 @@
+#index {
+    background-color: rgba(0,0,0,0.8);
+    height: 100%;
+
+    .index-nav {
+        font-size: 70px;
+        text-align: center;
+        padding: 50px;
+
+        a {
+            text-decoration: none;
+            padding: 50px;
+            color: black;
+            font-weight: 900;
+            text-shadow: 2px 2px 24px white;
+
+            &:hover {
+                text-decoration: underline;
+                color: gray;
+                text-shadow: 0 0 5px blue;
+            }
+        }
+    }
+
+    .cards-container {
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+
+        .card {
+            &:hover {
+                box-shadow: 2px 2px 24px white;
+                background-color: #949494;
+
+                img {
+                    box-shadow: 2px 2px 24px blue;
+                }
+            }
+            /* width */
+            ::-webkit-scrollbar {
+                width: 10px;
+            }
+            /* Track */
+            ::-webkit-scrollbar-track {
+                box-shadow: inset 0 0 5px grey;
+                border-radius: 10px;
+            }
+            /* Handle */
+            ::-webkit-scrollbar-thumb {
+                background: #2B3139;
+                border-radius: 10px;
+            }
+            box-shadow: 2px 2px 24px blue;
+            border-radius: 7px;
+            background-color: #996F11;
+            margin: 100px 15px;
+            padding: 30px 15px;
+            width: calc(100%/3 - 30px);
+            text-align: center;
+
+            a {
+                text-decoration: none;
+
+                img {
+                    border-radius: 7px;
+                    box-shadow: 2px 2px 24px white;
+                }
+
+                h2 {
+                    font-weight: 900;
+                    padding-top: 20px;
+                    color: black;
+                    text-shadow: 2px 2px 24px white;
+                }
+
+                h3 {
+                    text-shadow: 0 0 20px blue;
+                    font-size: 25px;
+                    color: white;
+                }
+
+                h4 {
+                    padding-top: 20px;
+                    text-transform: uppercase;
+                    text-shadow: 0 0 10px white;
+                }
+
+                p {
+                    font-weight: 900;
+                    color: black;
+                    border-radius: 7px;
+                    background-color: #A18647;
+                    margin: 20px 0;
+                    padding: 20px 10px;
+                    height: 150px;
+                    overflow-y: scroll;
+                    text-shadow: 0 0 1px yellow;
+                }
+            }
+
+            h2 {
+                padding-bottom: 20px;
+
+                a {
+                    padding-bottom: 20px;
+                    font-size: 30px;
+                    color: black;
+                    text-shadow: 2px 2px 24px white;
+
+                    &:hover {
+                        text-shadow: 2px 2px 24px blue;
+                        text-decoration: underline;
+                        color: blue;
+                    }
+                }
+            }
+
+            input {
+                border-radius: 7px;
+                background-color: #0A1816;
+                color: gray;
+                font-weight: 900;
+                padding: 10px 40px;
+
+                &:hover {
+                    box-shadow: 2px 2px 24px blue;
+                    background-color: gray;
+                    color: #0A1816;
+                }
+            }
+        }
+    }
+}

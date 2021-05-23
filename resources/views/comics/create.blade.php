@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('main')
-<main>
+<div id="create">
     <form class="" action="{{route('comics.store')}}" method="post">
       @csrf
       @method('POST')
@@ -12,10 +12,9 @@
         <input type="text" name="series" value=""placeholder="Serie">
         <input type="date" name="sale_date"placeholder="Data di vendita">
         <input type="text" name="type" value=""placeholder="Tipo">
-        
+
         <input type="submit" name="" value="Invia">
     </form>
-</main>
 
-
+</div>
 @endsection

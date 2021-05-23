@@ -19380,6 +19380,14 @@ module.exports = function(module) {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
+__webpack_require__(/*! ./create.js */ "./resources/js/create.js");
+
+__webpack_require__(/*! ./edit.js */ "./resources/js/edit.js");
+
+__webpack_require__(/*! ./index.js */ "./resources/js/index.js");
+
+__webpack_require__(/*! ./show.js */ "./resources/js/show.js");
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":
@@ -19411,6 +19419,66 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     forceTLS: true
 // });
+
+/***/ }),
+
+/***/ "./resources/js/create.js":
+/*!********************************!*\
+  !*** ./resources/js/create.js ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+var create = new Vue({
+  el: '#show',
+  data: {},
+  methods: {}
+});
+
+/***/ }),
+
+/***/ "./resources/js/edit.js":
+/*!******************************!*\
+  !*** ./resources/js/edit.js ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+var edit = new Vue({
+  el: '#show',
+  data: {},
+  methods: {}
+});
+
+/***/ }),
+
+/***/ "./resources/js/index.js":
+/*!*******************************!*\
+  !*** ./resources/js/index.js ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+var index = new Vue({
+  el: '#show',
+  data: {},
+  methods: {}
+});
+
+/***/ }),
+
+/***/ "./resources/js/show.js":
+/*!******************************!*\
+  !*** ./resources/js/show.js ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+var show = new Vue({
+  el: '#show',
+  data: {},
+  methods: {}
+});
 
 /***/ }),
 
