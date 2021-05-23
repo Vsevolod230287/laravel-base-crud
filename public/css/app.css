@@ -20,6 +20,184 @@ html body main {
   height: 100%;
 }
 
+#create {
+  margin: 50px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#create .create-nav {
+  padding-bottom: 20px;
+}
+
+#create .create-nav a {
+  font-size: 70px;
+  color: black;
+  font-weight: 900;
+  text-shadow: 2px 2px 24px white;
+  text-decoration: none;
+}
+
+#create .create-nav a:hover {
+  text-decoration: underline;
+}
+
+#create form {
+  box-shadow: 2px 2px 24px white;
+  border-radius: 7px;
+  margin-top: 100px;
+  width: 60%;
+  padding: 50px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  background-color: #949494;
+}
+
+#create form span {
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+#create form input[type=submit] {
+  margin-top: 20px;
+  background-color: #069420;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+#create form input[type=submit]:hover {
+  background-color: #011d06;
+  box-shadow: 2px 2px 24px blue;
+}
+
+#create form input {
+  padding: 0 10px;
+  color: white;
+  background-color: #420420;
+  border-radius: 7px;
+  width: 50%;
+  box-shadow: 2px 2px 24px black;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+#create form.delete {
+  padding: 5px;
+  margin-top: 30px;
+  text-align: center;
+  background-color: #069420;
+  border-radius: 7px;
+  width: 60%;
+  box-shadow: 2px 2px 24px black;
+  line-height: 30px;
+}
+
+#create form.delete:hover {
+  background-color: #011d06;
+  box-shadow: 2px 2px 24px white;
+}
+
+#create form.delete input {
+  color: white;
+  background-color: transparent;
+}
+
+#edit {
+  margin: 50px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#edit .edit-nav {
+  padding-bottom: 20px;
+}
+
+#edit .edit-nav a {
+  font-size: 70px;
+  color: black;
+  font-weight: 900;
+  text-shadow: 2px 2px 24px white;
+  text-decoration: none;
+}
+
+#edit .edit-nav a:hover {
+  text-decoration: underline;
+}
+
+#edit form.edit {
+  box-shadow: 2px 2px 24px white;
+  border-radius: 7px;
+  margin-top: 100px;
+  width: 60%;
+  padding: 50px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  background-color: #949494;
+}
+
+#edit form.edit span {
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+#edit form.edit input[type=submit] {
+  margin-top: 20px;
+  background-color: #069420;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+#edit form.edit input[type=submit]:hover {
+  background-color: #011d06;
+  box-shadow: 2px 2px 24px blue;
+}
+
+#edit form.edit input {
+  padding: 0 10px;
+  color: white;
+  background-color: #420420;
+  border-radius: 7px;
+  width: 50%;
+  box-shadow: 2px 2px 24px black;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+#edit form.delete {
+  padding: 5px;
+  margin-top: 30px;
+  text-align: center;
+  background-color: #069420;
+  border-radius: 7px;
+  width: 60%;
+  box-shadow: 2px 2px 24px black;
+  line-height: 30px;
+}
+
+#edit form.delete:hover {
+  background-color: #011d06;
+  box-shadow: 2px 2px 24px white;
+}
+
+#edit form.delete input {
+  color: white;
+  background-color: transparent;
+}
+
 #index {
   background-color: rgba(0, 0, 0, 0.8);
   height: 100%;
@@ -262,11 +440,12 @@ html body main {
   color: #000033;
   font-size: 100px;
   text-shadow: 2px 2px 24px white;
+  text-decoration: none;
 }
 
 #welcome a:hover {
   color: gray;
   text-shadow: 2px 2px 24px black;
-  text-decoration: none;
+  text-decoration: underline;
 }
 

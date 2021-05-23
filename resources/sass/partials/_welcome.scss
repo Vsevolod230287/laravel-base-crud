@@ -24,11 +24,13 @@
         color: #000033;
         font-size: 100px;
         text-shadow: 2px 2px 24px white;
+          text-decoration: none;
 
         &:hover {
             color: gray;
             text-shadow: 2px 2px 24px black;
-            text-decoration: none;
+            text-decoration: underline;
+
         }
     }
 }

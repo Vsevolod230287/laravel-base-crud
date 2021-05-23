@@ -2,6 +2,10 @@
 
 @section('main')
 <div id="create">
+  <div class="create-nav">
+
+    <a href="{{route('comics.index')}}">Turn Back To All comics</a>
+  </div>
     <form class="" action="{{route('comics.store')}}" method="post">
       @csrf
       @method('POST')
