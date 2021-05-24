@@ -3,9 +3,9 @@
 @section('main')
 <div id="edit">
   <div class="edit-nav">
-
     <a href="{{route('comics.index')}}">Turn Back To All comics</a>
   </div>
+  
     <form class="edit" action="{{route('comics.update', ['comic'=>$comic->id])}}" method="post">
         @csrf
         @method('PUT')

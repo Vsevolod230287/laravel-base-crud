@@ -19460,9 +19460,24 @@ var edit = new Vue({
 /***/ (function(module, exports) {
 
 var index = new Vue({
-  el: '#show',
-  data: {},
-  methods: {}
+  el: '#index',
+  data: {
+    form: false,
+    btnElimina: true,
+    id: null
+  },
+  methods: {
+    showForm: function showForm(id) {
+      this.id = id;
+      this.form = true;
+      this.btnElimina = false;
+    },
+    anulla: function anulla() {
+      this.form = false;
+      this.btnElimina = true;
+      this.id = null;
+    }
+  }
 });
 
 /***/ }),

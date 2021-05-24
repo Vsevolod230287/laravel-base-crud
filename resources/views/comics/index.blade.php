@@ -19,14 +19,23 @@
                 <h2>{{$comic->price}}</h2>
             </a>
             <h2><a href="{{route('comics.edit', ['comic'=>$comic->id])}}">Modifica</a></h2>
-            <form class="" action="{{route('comics.destroy', ['comic'=>$comic])}}" method="post">
-                @csrf
-                @method('DELETE')
-                <input type="submit" name="" value="ELIMINA">
-            </form>
+
+            <button v-if="{{$comic->id}} != id" @click="showForm({{$comic->id}})" type="button" name="button">Elimina</button>
+
+            <div class="hide" v-if="id == {{$comic->id}}">
+                <form class="" action="{{route('comics.destroy', ['comic'=>$comic->id])}}" method="post">
+                    @csrf
+                    @method('DELETE')
+                    <p>Vuoi cancelarlo?</p>
+                    <input type="submit" name="" value="SI">
+                    <button @click="anulla">NO</button>
+
+                </form>
+            </div>
 
         </div>
         @endforeach
+
     </div>
 
 </div>

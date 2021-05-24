@@ -323,7 +323,8 @@ html body main {
   color: blue;
 }
 
-#index .cards-container .card input {
+#index .cards-container .card button {
+  margin-top: 10px;
   border-radius: 7px;
   background-color: #0A1816;
   color: gray;
@@ -331,7 +332,25 @@ html body main {
   padding: 10px 40px;
 }
 
-#index .cards-container .card input:hover {
+#index .cards-container .card button:hover {
+  box-shadow: 2px 2px 24px blue;
+  background-color: gray;
+  color: #0A1816;
+}
+
+#index .cards-container .card .hide p {
+  font-weight: 900;
+}
+
+#index .cards-container .card .hide input {
+  border-radius: 7px;
+  background-color: #0A1816;
+  color: gray;
+  font-weight: 900;
+  padding: 10px 40px;
+}
+
+#index .cards-container .card .hide input:hover {
   box-shadow: 2px 2px 24px blue;
   background-color: gray;
   color: #0A1816;

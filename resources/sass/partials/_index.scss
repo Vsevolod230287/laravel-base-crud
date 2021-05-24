@@ -116,7 +116,8 @@
                 }
             }
 
-            input {
+            button {
+                margin-top: 10px;
                 border-radius: 7px;
                 background-color: #0A1816;
                 color: gray;
@@ -127,6 +128,25 @@
                     box-shadow: 2px 2px 24px blue;
                     background-color: gray;
                     color: #0A1816;
+                }
+            }
+
+            .hide {
+              p{
+                font-weight: 900;
+              }
+                input {
+                    border-radius: 7px;
+                    background-color: #0A1816;
+                    color: gray;
+                    font-weight: 900;
+                    padding: 10px 40px;
+
+                    &:hover {
+                        box-shadow: 2px 2px 24px blue;
+                        background-color: gray;
+                        color: #0A1816;
+                    }
                 }
             }
         }

@@ -12,13 +12,13 @@
 </head>
 
 <body>
-  <main>
+    <main>
 
-    @yield('main')
+        @yield('main')
 
-  </main>
+    </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
     <script src="./js/app.js" charset="utf-8"></script>
 </body>
 
